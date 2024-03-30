@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(80deg, rgba(233,233,233,1) 0%, rgba(167,167,167,1) 30%, rgba(94,94,94,1) 100%);
+}
+
+h1 {
+    text-align: center;
+    font-family: "Cutive Mono", monospace;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+footer {
+    display: flex;  
+    height: 100px;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+a:hover {
+    color: #6E8072;
+    transition: all .7s ease;
+    -webkit-transition: all .7s ease;
+}
+
+a:target {
+    margin-top: -200px;
+    padding-top: 200px;
+}
+
+nav {
+    margin: 30px;
+    background-color: black;
+    color: aliceblue;
+    border-radius: 50px;
+    border: 0px solid #FFF;
+    font-family: "Cutive Mono", monospace;
+    font-size: 40px;
+    transition: background-color 1.3s ease, opacity 0.5s ease;
+}
+
+nav:not(:hover) {
+    opacity: 0.7;
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+    margin: 10px;
+}
+
+.menuitem {
+    display: inline-block;
+    padding: 0 50px;  
+    line-height: 70px;
+    padding-bottom: 10px;
+}
+
+.l-img {
+    height: 70px;
+    padding: 0px 50px;
+    margin-top: 20px;
+}
+
+.center {
+    text-align: center;
+}
+
+.secao {
+    display: flex;   
+    text-align: justify;
+    flex-direction: row;
+}
+
+.secao-rev {
+    display: flex;   
+    text-align: justify;
+    flex-direction: row-reverse;
+}
+
+#pessoal {
+    font-family: "Cutive Mono", monospace;
+    font-weight: bold;
+    font-size: 18px;
+    width: 800px;
+    flex-direction: column;
+    border-radius: 250px;
+    border: 1px solid black;
+    padding: 100px 100px;
+    margin: 50px 200px;
+}
+
+#conhecimentos {
+    font-family: "Cutive Mono", monospace;
+    font-weight: bold;
+    font-size: 18px;
+    width: 800px;
+    flex-direction: column;
+    border-radius: 250px;
+    border: 1px solid black;
+    padding: 100px 100px;
+    margin: 50px 200px;
+}
+
+#projetos {
+    font-family: "Cutive Mono", monospace;
+    font-weight: bold;
+    font-size: 18px;
+    width: 800px;
+    flex-direction: column;
+    border-radius: 250px;
+    border: 1px solid black;
+    padding: 100px 100px;
+    margin: 50px 200px;
+}
+
+#profissional {
+    font-family: "Cutive Mono", monospace;
+    font-weight: bold;
+    font-size: 18px;
+    width: 800px;
+    flex-direction: column;
+    border-radius: 250px;
+    border: 1px solid black;
+    padding: 100px 100px;
+    margin: 50px 200px;
+}
+
+.foto {
+    width: 300px;
+    border-radius: 50px;
+    border: 0px solid #FFF;
+    margin: 50px;
+}
+
+.prog {
+    width: 600px;
+    border: 0px solid #FFF;
+    margin: 70px;
+    text-align: left;
+}
+
+.pro {
+    width: 600px;
+    border: 0px solid #FFF;
+    margin: 70px;
+    background-color: transparent;
+}
+
+#git-link {
+    text-indent: 70px;
+    height: 30px;
+}
+
+.icons{
+    width: 40px;
+    vertical-align: middle;
+}
+
+#linguagens {
+    list-style-type: disc;
+    text-align: left;
+}
+
+.experiencias {
+    list-style-type: disc;
+    text-align: justify;
+    font-style: italic;
+}
+
+.experiencias-li {
+    padding: 10px;
+}
+
+#contatos {
+    width: 280px;
+    text-align: center;
+    font-family: "Cutive Mono", monospace;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    margin: 100px 0px;
+    background-image: linear-gradient(to right, #f0f0f0, #8f8f8f, #8f8f8f);
+}
+
+hr::after {
+    content: '§';
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(60deg);
+    transform-origin: 50% 50%;
+    padding: 1rem;
+    background-color: transparent;
+}
+
+@keyframes fadeOut {
+    from {
+      opacity: 100;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  
+.fade {
+    animation: fadeOut 2s linear forwards;
+}
